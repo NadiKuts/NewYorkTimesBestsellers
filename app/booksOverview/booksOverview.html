@@ -1,1 +1,12 @@
-<span>Bestsellers</span>
+<div class='booksHeader'>
+  <h2>Bestsellers</h2>
+  <span class='lastModified'><i>last modified {{lastModified}}</i></span>
+</div>
+<div class='bookBoard'>
+  <div class='bookCard' ng-repeat="book in books">
+    <h3>{{book.book_details[0].title}}</h3>
+    <span>{{book.book_details[0].author}}</span>
+    <p>Rank this week: {{book.rank}}</p>
+    <p>Rank last week: {{book.rank_last_week}}</p>
+  </div>
+</div>

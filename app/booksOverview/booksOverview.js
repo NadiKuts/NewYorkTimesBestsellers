@@ -12,7 +12,7 @@ angular.module('myApp.booksOverview', ['ngRoute'])
 .controller('booksOverviewCtrl', ['$scope', 'API', function($scope, API) {
   API.getEvents().then(function (data) {
     console.log(data);
-    $scope.lastModified = data.data.last_modified;
+    $scope.lastModified = data.data.last_modified.substr(0, 10);
     $scope.books = data.data.results;
     
   });

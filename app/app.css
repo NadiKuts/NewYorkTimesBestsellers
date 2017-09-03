@@ -1,5 +1,9 @@
-/* app css stylesheet */
 .mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.views {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +11,8 @@
 header {
   width: 100vw;
   height: 100px;
-  background-color: #E0E0E0;
+  background-color: #455A64;
+  color: #FFFFFF;
   font-family: 'Roboto Condensed', sans-serif;
   padding-top: 20px;
   text-align: center;
@@ -38,4 +43,31 @@ button.showAll {
 }
 .showAll a {
   color: #FFFFFF;
+}
+.booksHeader {
+  background-color: #90A4AE;
+  color: #FFFFFF;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.lastModified {
+  margin: 0 20px;
+}
+.bookBoard {
+  width: 80%;
+  height: 500px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bookCard {
+  background-color: pink;
+  width: 30%;
+  height: 200px;
+  margin: 20px;
 }
