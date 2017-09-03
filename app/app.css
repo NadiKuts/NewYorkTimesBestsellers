@@ -66,8 +66,13 @@ button.showAll {
   flex-wrap: wrap;
 }
 .bookCard {
-  background-color: pink;
+  background-color: #E8EAF6;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   width: 30%;
   height: 200px;
   margin: 20px;
+}
+.bookCard img {
+  height: 20px;
+  width: 20px;
 }

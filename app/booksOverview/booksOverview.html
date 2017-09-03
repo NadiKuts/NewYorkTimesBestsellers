@@ -3,10 +3,13 @@
   <span class='lastModified'><i>last modified {{lastModified}}</i></span>
 </div>
 <div class='bookBoard'>
-  <div class='bookCard' ng-repeat="book in books">
-    <h3>{{book.book_details[0].title}}</h3>
-    <span>{{book.book_details[0].author}}</span>
+  <div class='bookCard' ng-repeat="book in books" >
+    <h3>{{book.title}}</h3>
+    <span>{{book.author}}</span>
     <p>Rank this week: {{book.rank}}</p>
     <p>Rank last week: {{book.rank_last_week}}</p>
+    <img ng-if='book.down' src='down.png' />
+    <img ng-if='book.same' src='minus.png' />
+    <img ng-if='book.up' src='up.png' />
   </div>
 </div>
