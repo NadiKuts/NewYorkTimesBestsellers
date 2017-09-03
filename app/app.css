@@ -1,7 +1,8 @@
 /* app css stylesheet */
-body {
+.mainPage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 header {
   width: 100vw;
@@ -27,6 +28,9 @@ button.showAll {
   margin-top: 200px;
   border: 0; 
 }
+.showAll a {
+  color: #FFFFFF;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -34,19 +38,3 @@ button.showAll {
   padding: 0 0 0.5em;
 }
 
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
