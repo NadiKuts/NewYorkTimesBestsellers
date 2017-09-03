@@ -9,8 +9,11 @@ angular.module('myApp.booksOverview', ['ngRoute'])
   });
 }])
 
-.controller('booksOverviewCtrl', ['API', function(API) {
+.controller('booksOverviewCtrl', ['$scope', 'API', function($scope, API) {
   API.getEvents().then(function (data) {
-    console.log(data.data.results);
+    console.log(data);
+    $scope.lastModified = data.data.last_modified;
+    $scope.books = data.data.results;
+    
   });
 }]);

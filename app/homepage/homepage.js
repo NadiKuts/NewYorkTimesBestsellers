@@ -9,5 +9,10 @@ angular.module('myApp.homepage', ['ngRoute'])
   });
 }])
 
-.controller('homepageCtrl', [function() {
+.controller('homepageCtrl', ['$scope', '$location', function($scope, $location) {
+  
+  /** function for navigation onClick*/
+  $scope.go = function ( path ) {
+    $location.path( path );
+  };
 }]);

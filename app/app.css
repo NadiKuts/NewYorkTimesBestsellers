@@ -14,7 +14,15 @@ header {
   font-size: 3em;
   font-weight: bold;
 }
-
+header img {
+  height: 50px;
+  width: 50px;
+  align-self: flex-end;
+  position: absolute;
+  right: 5%;
+  top: 30px;
+  cursor: pointer;
+}
 button.showAll {
   background-color: #1A237E;
   color: #FFFFFF;
@@ -31,10 +39,3 @@ button.showAll {
 .showAll a {
   color: #FFFFFF;
 }
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
