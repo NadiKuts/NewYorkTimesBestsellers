@@ -51,7 +51,7 @@ button.showAll {
   height: 80px;
   display: flex;
   flex-direction: row;
-  padding: 5px 50px;
+  padding: 5px 10%;
   align-items: center;
   justify-content: flex-start;
 }
@@ -72,7 +72,27 @@ button.showAll {
   height: 200px;
   margin: 20px;
 }
-.bookCard img {
+.bookCard h3 {
+  text-align: center;
+}
+.author {
+  margin-left: 20px;
+  font-size: 1em;
+}
+.rankingSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rank {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rankingSection img {
   height: 20px;
   width: 20px;
 }

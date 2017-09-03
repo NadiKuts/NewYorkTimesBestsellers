@@ -5,11 +5,19 @@
 <div class='bookBoard'>
   <div class='bookCard' ng-repeat="book in books" >
     <h3>{{book.title}}</h3>
-    <span>{{book.author}}</span>
-    <p>Rank this week: {{book.rank}}</p>
-    <p>Rank last week: {{book.rank_last_week}}</p>
-    <img ng-if='book.down' src='down.png' />
-    <img ng-if='book.same' src='minus.png' />
-    <img ng-if='book.up' src='up.png' />
+    <span class='author'>Author: <i>{{book.author}}</i></span>
+    <div class='rankingSection'>
+      <div class='rank'>
+        <p>Rank this week</p>
+        <p>{{book.rank}}</p>
+      </div>
+      <img ng-if='book.down' src='down.png' />
+      <img ng-if='book.same' src='minus.png' />
+      <img ng-if='book.up' src='up.png' />
+      <div class='rank'>
+        <p>Rank last week</p>
+        <p>{{book.rank_last_week}}</p>
+      </div>
+    </div>
   </div>
 </div>
