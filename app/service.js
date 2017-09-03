@@ -1,10 +1,9 @@
 var controllers = angular.module('myApp');
 controllers.value('Server', 'https://api.nytimes.com/svc/books/v3/lists.json')
 
-controllers.factory('API', ['$http', '$timeout', 'Server', function ($http, $timeout, Server) {
+controllers.factory('API', ['$http', 'Server', function ($http, Server) {
     var API = {};
-    var loadTime = 1000;
-    
+
     API.getEvents = function () {
       return $http.get(Server, {
         params: {
@@ -13,5 +12,6 @@ controllers.factory('API', ['$http', '$timeout', 'Server', function ($http, $tim
         }
       });
     }
+    
     return API;
 }])

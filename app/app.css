@@ -1,4 +1,4 @@
-.mainPage {
+.homePage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,7 @@ header img {
   top: 30px;
   cursor: pointer;
 }
-button.showAll {
+.showAllButton {
   background-color: #1A237E;
   color: #FFFFFF;
   height: 150px;
@@ -39,9 +39,9 @@ button.showAll {
   align-self: center;
   left: 50%;
   margin-top: 200px;
-  border: 0; 
+  border: 0;
 }
-.showAll a {
+.showAllButton a {
   color: #FFFFFF;
 }
 .booksHeader {
@@ -55,10 +55,10 @@ button.showAll {
   align-items: center;
   justify-content: flex-start;
 }
-.lastModified {
+.lastModifiedLabel {
   margin: 0 20px;
 }
-.sortBy {
+.sortForm {
   width: 80%;
   margin-top: 20px;
   align-self: center;
@@ -67,10 +67,10 @@ button.showAll {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.sortBy span {
+.sortForm span {
   margin: 30px;
 }
-.bookBoard {
+.booksBoard {
   width: 80%;
   height: 500px;
   align-self: center;
@@ -87,7 +87,7 @@ button.showAll {
 .bookCard h3 {
   text-align: center;
 }
-.author {
+.authorLabel {
   margin-left: 20px;
   font-size: 1em;
 }
@@ -97,7 +97,7 @@ button.showAll {
   justify-content: center;
   align-items: center;
 }
-.rank {
+.rankLabelContainer {
   flex: 3;
   display: flex;
   flex-direction: column;

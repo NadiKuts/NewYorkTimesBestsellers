@@ -1,8 +1,8 @@
 <div class='booksHeader'>
   <h2>Bestsellers</h2>
-  <span class='lastModified'><i>last modified {{lastModified}}</i></span>
+  <span class='lastModifiedLabel'><i>last modified {{lastModified}}</i></span>
 </div>
-<div class='sortBy'>
+<div class='sortForm'>
   <span>Sort by</span>
   <form>
     <input type="radio" ng-model="selected" value="title"> title <br>
@@ -12,20 +12,21 @@
   </form>
 </div>
 
+<h3 ng-if='ishttperror'>Books data was not loaded correctly</h3>
 
-<div class='bookBoard'>
+<div class='booksBoard'>
   <div class='bookCard' ng-repeat="book in books | filter: filterFunction | orderBy: selected" >
     <h3>{{book.title}}</h3>
-    <span class='author'>Author: <i>{{book.author}}</i></span>
+    <span class='authorLabel'>Author: <i>{{book.author}}</i></span>
     <div class='rankingSection'>
-      <div class='rank'>
+      <div class='rankLabelContainer'>
         <p>Rank this week</p>
         <p id="thisWeekRank">{{book.rank}}</p>
       </div>
       <img ng-if='book.down' src='down.png' />
       <img ng-if='book.same' src='minus.png' />
       <img ng-if='book.up' src='up.png' />
-      <div class='rank'>
+      <div class='rankLabelContainer'>
         <p>Rank last week</p>
         <p id="lastWeekRank">{{book.rank_last_week}}</p>
       </div>
