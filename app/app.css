@@ -1,5 +1,32 @@
 /* app css stylesheet */
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 100vw;
+  height: 100px;
+  background-color: #E0E0E0;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+}
 
+button.showAll {
+  background-color: #1A237E;
+  color: #FFFFFF;
+  height: 150px;
+  width: 300px;
+  font-size: 2em;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 15px;
+  align-self: center;
+  left: 50%;
+  margin-top: 200px;
+  border: 0; 
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
