@@ -26,9 +26,9 @@ choose what bestseller list shall be used. For this you can use an additional en
 called “Besteller List Names”. Please display in the dropdown list the values of
 “display_name” and load the data when a selection is made.
 
-<img height="20px" width="20px" src="https://github.com/NadiKuts/NewYorkTimesBestsellers/blob/master/app/check.png">Please use Angular 1.5
+<img height="20px" width="20px" src="https://github.com/NadiKuts/NewYorkTimesBestsellers/blob/master/app/check.png"> Please use Angular 1.5
 
-<img height="20px" width="20px" src="https://github.com/NadiKuts/NewYorkTimesBestsellers/blob/master/app/question.png">Prefer to use components. **The last time I worked with Angular was quite some time ago, and at that time it didn't have components (and from what I read about it today, components in Angular have quite different syntax and project structure). After that I switched to React and didn't really have a chance to dive into components syntax in Angular 1.5. I totally understand that treating book cards would be a much better approach from 'reusability' standpoint.**
+<img height="20px" width="20px" src="https://github.com/NadiKuts/NewYorkTimesBestsellers/blob/master/app/question.png"> Prefer to use components. **The last time I worked with Angular was quite some time ago, and at that time it didn't have components (and from what I read about it today, components in Angular have quite different syntax and project structure). After that I switched to React and didn't really have a chance to dive into components syntax in Angular 1.5. I totally understand that treating book cards would be a much better approach from 'reusability' standpoint.**
 
 <img height="20px" width="20px" src="https://github.com/NadiKuts/NewYorkTimesBestsellers/blob/master/app/check.png"> Create a public Github repo for the code. Commit your progress with good commit message and in sensible chunks
 
