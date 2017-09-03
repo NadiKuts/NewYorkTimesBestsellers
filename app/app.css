@@ -58,6 +58,18 @@ button.showAll {
 .lastModified {
   margin: 0 20px;
 }
+.sortBy {
+  width: 80%;
+  margin-top: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sortBy span {
+  margin: 30px;
+}
 .bookBoard {
   width: 80%;
   height: 500px;

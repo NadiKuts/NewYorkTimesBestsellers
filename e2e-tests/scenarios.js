@@ -9,34 +9,35 @@ describe('my app', function() {
     browser.get('index.html');
     expect(browser.getLocationAbsUrl()).toMatch("/homepage");
   });
+  
 
 
-  describe('homepage', function() {
-
+  describe('homepage ', function() {
+  
     beforeEach(function() {
       browser.get('index.html#!/homepage');
     });
-
-
+  
+  
     it('should render homepage when user navigates to /homepage', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
+      expect(element.all(by.css('[ng-view] button')).first().getText()).
+        toMatch(/See all bestsellers/);
     });
-
+  
   });
-
-
+  
+  
   describe('booksOverview', function() {
-
+  
     beforeEach(function() {
       browser.get('index.html#!/booksOverview');
     });
-
-
-    it('should render booksOverview when user navigates to /booksOverview', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
+  
+    it('should render header Bestsellers when user navigates to /booksOverview', function() {
+      expect(element.all(by.css('[ng-view] h2')).first().getText()).
+        toMatch(/Bestsellers/);
     });
-
+  
   });
+
 });

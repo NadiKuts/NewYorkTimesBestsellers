@@ -10,10 +10,16 @@ angular.module('myApp.booksOverview', ['ngRoute'])
 }])
 
 .controller('booksOverviewCtrl', ['$scope', 'API', function($scope, API) {
+  $scope.filterFunction = function(element) {
+    return element.rank_last_week == 0 && $scope.selected == 'rank_last_week' ? false : true;
+  };
+  
   API.getEvents().then(function (data) {
-    console.log(data);
+    $scope.selected = 'rank';
+    
+    
+    
     $scope.lastModified = data.data.last_modified.substr(0, 10);
-    // $scope.books = data.data.results;
     $scope.books = [];
     for (var i = 0; i < data.data.results.length; i++) {
       var book = {
@@ -26,7 +32,7 @@ angular.module('myApp.booksOverview', ['ngRoute'])
         book.up = false;
         book.down = false;
         book.same = true;
-      } else if (book.rank > book.rank_last_week) {
+      } else if (book.rank < book.rank_last_week) {
         book.up = true;
         book.down = false;
         book.same = false;

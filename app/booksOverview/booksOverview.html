@@ -2,8 +2,19 @@
   <h2>Bestsellers</h2>
   <span class='lastModified'><i>last modified {{lastModified}}</i></span>
 </div>
+<div class='sortBy'>
+  <span>Sort by</span>
+  <form>
+    <input type="radio" ng-model="selected" value="title"> title <br>
+    <input type="radio" ng-model="selected" value="author"> author <br>
+    <input type="radio" ng-model="selected" value="rank"> rank this week <br>
+    <input type="radio" ng-model="selected" value="rank_last_week"> rank last week
+  </form>
+</div>
+
+
 <div class='bookBoard'>
-  <div class='bookCard' ng-repeat="book in books" >
+  <div class='bookCard' ng-repeat="book in books | filter: filterFunction | orderBy: selected" >
     <h3>{{book.title}}</h3>
     <span class='author'>Author: <i>{{book.author}}</i></span>
     <div class='rankingSection'>
