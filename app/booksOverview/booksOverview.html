@@ -20,14 +20,14 @@
     <div class='rankingSection'>
       <div class='rank'>
         <p>Rank this week</p>
-        <p>{{book.rank}}</p>
+        <p id="thisWeekRank">{{book.rank}}</p>
       </div>
       <img ng-if='book.down' src='down.png' />
       <img ng-if='book.same' src='minus.png' />
       <img ng-if='book.up' src='up.png' />
       <div class='rank'>
         <p>Rank last week</p>
-        <p>{{book.rank_last_week}}</p>
+        <p id="lastWeekRank">{{book.rank_last_week}}</p>
       </div>
     </div>
   </div>
